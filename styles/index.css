@@ -54,7 +54,8 @@ hr {
     border: 1px solid var(---horizontalrule);
 }
 
-input {
+input[type="number"],
+input[type="text"] {
     height: 39px;
     background-color: var(---inputbackground);
     border: none;
