@@ -56,7 +56,6 @@ button {
 }
 
 button:disabled {
-    /*TODO: Grey out button*/
     background-color: #065F46;
 }
 
