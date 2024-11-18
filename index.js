@@ -89,6 +89,16 @@ function copyToClipboard() {
     copyAlert.addEventListener("animationend", () => copyAlert.classList.remove("animatemove"), {once : true});
 }
 
+function setColorScheme(scheme) {
+    document.body.className = "";
+    if (scheme === 1) {
+        document.body.className = "darkmode";
+    }
+    else {
+        document.body.className = "lightmode";
+    }
+}
+
 String.prototype.shuffle = function() {
     var a = this.split(""), n = a.length;
 
