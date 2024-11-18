@@ -2,11 +2,9 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 let passwordOne = document.querySelector("#password-one");
-let passwordTwo = document.querySelector("#password-two");
 
 function generatePasswords() {
     passwordOne.value = generatePassword();
-    passwordTwo.value = generatePassword();
 }
 
 function generatePassword() {
@@ -17,4 +15,9 @@ function generatePassword() {
     }
 
     return password;
+}
+
+function copyToClipboard() {
+    navigator.clipboard.writeText(passwordOne.value);
+    // TODO: CSS animation
 }
