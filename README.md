@@ -20,7 +20,7 @@ Happy Coding!
 
 # Stretch Goals
 1. Ability to set password length
-2. The ability to copy by clicking a button (should inform as well)
+2. ~~The ability to copy by clicking a button (should inform as well)~~ - Complete
 3. Various toggle options
     - Toggle inclusion and quantity of symbols
     - Toggle inclusion and quantity of numbers
