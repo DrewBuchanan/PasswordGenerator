@@ -28,13 +28,15 @@ h1 {
     margin-top: 75px;
     font-size: 40px;
     line-height: 40px;
+    text-align: center;
 }
 
 h2 {
     color: #D5D4D8;
     font-size: 20px;
     line-height: 28px;
-    margin-top: 6px;
+    margin: 6px auto 0 auto;
+    text-align: center;
 }
 
 .colortext {
@@ -42,9 +44,10 @@ h2 {
 }
 
 #generate {
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     width: 191;
     height: 42;
+    display: block;
 }
 
 button {
@@ -118,4 +121,44 @@ input:focus {
     25% { bottom: 20px; }
     75% { bottom: 20px; }
     100% { bottom: -200px; }
+}
+
+#options {
+    display: grid;
+    grid-template-columns: auto 75px auto 50px;
+    grid-template-rows: auto auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    justify-self: center;
+    width: 50px;
+}
+
+.spinner::-webkit-outer-spin-button,
+.spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: #0C4A6E url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=") no-repeat center center;
+    width: 1em;
+    border: 0px solid #BBB;
+    opacity: .5; /* shows Spin Buttons per default (Chrome >= 39) */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-image-width: 0px;
+}
+
+.spinner::-webkit-inner-spin-button:hover,
+.spinner::-webkit-inner-spin-button:active {
+    box-shadow: 0 0 2px #0CF;
+    opacity: .8;
+}
+
+#numbers-min, #special-min {
+    padding-right: 20px;
 }

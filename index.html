@@ -8,7 +8,23 @@
     <body>
         <h1 class="Karla">Generate a <br><span class="colortext">random password</span></h1>
         <h2 class="Inter">Never use an insecure password again.</h2>
-        <button id="generate" class="Inter" onclick="generatePasswords()">Generate Passwords</button>
+        <hr>
+        <div id="options">
+            <label class="inter">Length:</label>
+            <input type="number" class="spinner" id="length-value" value="256" min="1" max="256" step="1">
+            <input style="grid-column: 3 / span 2;" type="range" id="length" name="length" min="1" max="256" step="1" value="256">
+            <p class="inter">Include special?</p>
+            <input type="checkbox" class="checkbox" id="include-special" name="include-special" checked="true">
+            <p class="inter">Minimum special:</p>
+            <input type="number" class="spinner" id="special-min" min="1" max="64" value="1">
+            <p class="inter">Include numbers?</p>
+            <input type="checkbox" class="checkbox" id="include-numbers" name="include-numbers" checked="true">
+            <p class="inter">Minimum numbers?</p>
+            <input type="number" class="spinner" id="numbers-min" min="1" max="64" value="1">
+            <p class="inter">Avoid ambiguous?</p>
+            <input type="checkbox" class="checkbox" id="include-ambiguous" name="include-ambiguous" checked="false">
+        </div>
+        <button id="generate" class="Inter" onclick="generatePasswords()">Generate Password</button>
         <hr>
         <div id="passwords">
             <input class="Inter password" id="password-one" readonly></input>
