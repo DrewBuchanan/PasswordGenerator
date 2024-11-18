@@ -8,6 +8,7 @@ let copyButton = document.querySelector("#copy-button");
 function generatePasswords() {
     passwordOne.value = generatePassword();
     copyButton.disabled = false;
+    copyButton.textContent = "Copy";
 }
 
 function generatePassword() {
