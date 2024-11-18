@@ -75,6 +75,7 @@ input {
     border-radius: 6px;
     font-size: 16px;
     line-height: 32px;
+    padding-right: 20px;
     text-align: center;
     color: #55F991;
     flex: 2 0 auto;
@@ -125,7 +126,7 @@ input:focus {
 
 #options {
     display: grid;
-    grid-template-columns: auto 50px auto 50px;
+    grid-template-columns: auto 75px auto 50px;
     grid-template-rows: auto auto auto auto auto;
     column-gap: 10px;
     row-gap: 10px;
@@ -135,6 +136,30 @@ input:focus {
 }
 
 .checkbox {
-    justify-self: start;
+    justify-self: center;
     width: 50px;
+}
+
+.spinner::-webkit-outer-spin-button,
+.spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: #0C4A6E url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=") no-repeat center center;
+    width: 1em;
+    border: 0px solid #BBB;
+    opacity: .5; /* shows Spin Buttons per default (Chrome >= 39) */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-image-width: 0px;
+}
+
+.spinner::-webkit-inner-spin-button:hover,
+.spinner::-webkit-inner-spin-button:active {
+    box-shadow: 0 0 2px #0CF;
+    opacity: .8;
+}
+
+#password-one {
+    padding-right: 0;
 }

@@ -15,6 +15,12 @@ lengthSlider.addEventListener("input", (event) => {
     minimumSpecial.max = Math.floor(event.target.value/4);
 });
 
+lengthDisplay.addEventListener("input", (event) => {
+    lengthSlider.value = event.target.value;
+    minimumNumber.max = Math.floor(event.target.value/4);
+    minimumSpecial.max = Math.floor(event.target.value/4);
+})
+
 function generatePasswords() {
     passwordOne.value = generatePassword();
     copyButton.disabled = false;
