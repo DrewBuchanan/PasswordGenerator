@@ -74,6 +74,10 @@ input {
     color: #55F991;
 }
 
+input:focus {
+    outline: none;
+}
+
 #passwords {
     display: flex;
     justify-content: space-between;
