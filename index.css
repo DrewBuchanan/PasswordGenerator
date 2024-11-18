@@ -1,20 +1,80 @@
-body {
+* {
     margin: 0;
-    width: 550px;
-    height: 550px;
+}
+
+body {
+    width: 446px;
     margin: auto;
+    background-color: #1F2937;
+    padding: 0 26px;
 }
 
-h1 {
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-
-h2 {
+.inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+.karla {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h1 {
+    color: white;
+    margin-top: 75px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h2 {
+    color: #D5D4D8;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 6px;
+}
+
+.colortext {
+    color: #4ADF86;
+}
+
+button {
+    margin-top: 50px;
+    width: 191;
+    height: 42;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    background-color: #10b981;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #2F3E53;
+}
+
+input {
+    width: 211px;
+    height: 39px;
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #55F991;
+}
+
+#passwords {
+    display: flex;
+    justify-content: space-between;
 }
