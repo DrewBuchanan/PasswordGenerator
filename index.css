@@ -1,3 +1,20 @@
 body {
     margin: 0;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
