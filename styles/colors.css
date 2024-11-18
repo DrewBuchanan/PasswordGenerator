@@ -16,5 +16,18 @@
 }
 
 .lightmode {
-    
+    ---spinbuttonbackground: #9CA3AF;
+    ---spinbuttonborder: #BBB;
+    ---spinbuttonboxshadow: #374151;
+    ---bodytext: white;
+    ---copyalertbackground: #273549;
+    ---inputtext: #047857;
+    ---inputbackground: #D1D5DB;
+    ---horizontalrule: #D5D4D8;
+    ---buttondisabled: #065F46;
+    ---buttonbackground: #10b981;
+    ---coloredtext: #4ADF86;
+    ---subheading: #6B7280;
+    ---heading: #2B283A;
+    ---background: #ECFDF5;
 }
