@@ -2,11 +2,13 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 let passwordOne = document.querySelector("#password-one");
-let passwordTwo = document.querySelector("#password-two");
+let copyAlert = document.querySelector("#copy-alert");
+let copyButton = document.querySelector("#copy-button");
 
 function generatePasswords() {
     passwordOne.value = generatePassword();
-    passwordTwo.value = generatePassword();
+    copyButton.disabled = false;
+    copyButton.textContent = "Copy";
 }
 
 function generatePassword() {
@@ -17,4 +19,12 @@ function generatePassword() {
     }
 
     return password;
+}
+
+function copyToClipboard() {
+    navigator.clipboard.writeText(passwordOne.value);
+    copyButton.disabled = true;
+    copyButton.textContent = "Copied!";
+    copyAlert.classList.add("animatemove");
+    copyAlert.addEventListener("animationend", () => copyAlert.classList.remove("animatemove"), {once : true});
 }
