@@ -1,0 +1,20 @@
+.darkmode {
+    ---spinbuttonbackground: #0C4A6E;
+    ---spinbuttonborder: #BBB;
+    ---spinbuttonboxshadow: #0CF;
+    ---bodytext: white;
+    ---copyalertbackground: #273549;
+    ---inputtext: #55F991;
+    ---inputbackground: #273549;
+    ---horizontalrule: #2F3E53;
+    ---buttondisabled: #065F46;
+    ---buttonbackground: #10b981;
+    ---coloredtext: #4ADF86;
+    ---subheading: #D5D4D8;
+    ---heading: white;
+    ---background: #1F2937;
+}
+
+.lightmode {
+    
+}

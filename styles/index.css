@@ -1,23 +1,3 @@
-.darkmode {
-    ---spinbuttonbackground: #0C4A6E;
-    ---spinbuttonborder: #BBB;
-    ---spinbuttonboxshadow: #0CF;
-    ---bodytext: white;
-    ---copyalertbackground: #273549;
-    ---inputtext: #55F991;
-    ---inputbackground: #273549;
-    ---horizontalrule: #2F3E53;
-    ---buttondisabled: #065F46;
-    ---buttonbackground: #10b981;
-    ---coloredtext: #4ADF86;
-    ---subheading: #D5D4D8;
-    ---heading: white;
-    ---background: #1F2937;
-}
-
-.lightmode {
-}
-
 * {
     margin: 0;
 }
@@ -29,21 +9,7 @@ body {
     padding: 0 26px;
 }
 
-.inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.karla {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-}
-
-h1 {
+.heading {
     color: var(---heading);
     margin-top: 75px;
     font-size: 40px;
@@ -51,7 +17,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+.subheading {
     color: var(---subheading);
     font-size: 20px;
     line-height: 28px;
@@ -138,8 +104,8 @@ input:focus {
 
 @keyframes animatemove {
     0% { bottom: -200px; }
-    25% { bottom: 20px; }
-    75% { bottom: 20px; }
+    15% { bottom: 20px; }
+    85% { bottom: 20px; }
     100% { bottom: -200px; }
 }
 

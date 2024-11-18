@@ -3,11 +3,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Karla:wght@800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/colors.css">
     </head>
     <body class="darkmode">
-        <h1 class="Karla">Generate a <br><span class="colortext">random password</span></h1>
-        <h2 class="Inter">Never use an insecure password again.</h2>
+        <h1 class="Karla heading">Generate a <br><span class="colortext">random password</span></h1>
+        <h2 class="Inter subheading">Never use an insecure password again.</h2>
         <hr>
         <div id="options">
             <label class="inter">Length:</label>
@@ -32,6 +34,10 @@
         </div>
         <div id="copy-alert">
             <p class="Inter">Copied to clipboard!</p>
+        </div>
+        <div id="themes">
+            <button class="themebutton" onclick="theme(1)">Dark</button>
+            <button class="themebutton" onclick="theme(2)">Light</button>
         </div>
         <script src="index.js"></script>
     </body>
