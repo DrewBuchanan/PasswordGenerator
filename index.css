@@ -75,7 +75,6 @@ input {
     border-radius: 6px;
     font-size: 16px;
     line-height: 32px;
-    padding-right: 20px;
     text-align: center;
     color: #55F991;
     flex: 2 0 auto;
@@ -160,6 +159,6 @@ input:focus {
     opacity: .8;
 }
 
-#password-one {
-    padding-right: 0;
+#numbers-min, #special-min {
+    padding-right: 20px;
 }
