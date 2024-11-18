@@ -3,19 +3,41 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Karla:wght@800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/colors.css">
     </head>
-    <body>
-        <h1 class="Karla">Generate a <br><span class="colortext">random password</span></h1>
-        <h2 class="Inter">Never use an insecure password again.</h2>
-        <button id="generate" class="Inter" onclick="generatePasswords()">Generate Passwords</button>
+    <body class="darkmode">
+        <h1 class="Karla heading">Generate a <br><span class="colortext">random password</span></h1>
+        <h2 class="Inter subheading">Never use an insecure password again.</h2>
+        <hr>
+        <div id="options">
+            <label class="inter">Length:</label>
+            <input type="number" class="spinner" id="length-value" value="256" min="4" max="256" step="1">
+            <input style="grid-column: 3 / span 2;" type="range" id="length" name="length" min="4" max="256" step="1" value="256">
+            <label class="inter">Include special?</label>
+            <input type="checkbox" class="checkbox" id="include-special" name="include-special" checked="true">
+            <label class="inter">Minimum special:</label>
+            <input type="number" class="spinner" id="special-min" min="1" max="64" value="1">
+            <label class="inter">Include numbers?</label>
+            <input type="checkbox" class="checkbox" id="include-numbers" name="include-numbers" checked="true">
+            <label class="inter">Minimum numbers?</label>
+            <input type="number" class="spinner" id="numbers-min" min="1" max="64" value="1">
+            <label class="inter">Avoid ambiguous?</label>
+            <input type="checkbox" class="checkbox" id="include-ambiguous" name="include-ambiguous" checked="false">
+        </div>
+        <button id="generate" class="Inter" onclick="generatePasswords()">Generate Password</button>
         <hr>
         <div id="passwords">
-            <input class="Inter password" id="password-one" readonly></input>
+            <input type="text" class="Inter password" id="password-one" readonly></input>
             <button id="copy-button" class="Inter" onclick="copyToClipboard()">Copy</button>
         </div>
         <div id="copy-alert">
             <p class="Inter">Copied to clipboard!</p>
+        </div>
+        <div id="themes">
+            <button class="themebutton dark" onclick="setColorScheme(1)">Dark</button>
+            <button class="themebutton light" onclick="setColorScheme(2)">Light</button>
         </div>
         <script src="index.js"></script>
     </body>

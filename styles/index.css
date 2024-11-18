@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 446px;
+    margin: auto;
+    background-color: var(---background);
+    padding: 0 26px;
+}
+
+.heading {
+    color: var(---heading);
+    margin-top: 75px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.subheading {
+    color: var(---subheading);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 6px auto 0 auto;
+    text-align: center;
+}
+
+.colortext {
+    color: var(---coloredtext);
+}
+
+#generate {
+    margin: 50px auto 0 auto;
+    width: 191;
+    height: 42;
+    display: block;
+}
+
+button {
+    color: var(---bodytext);
+    background-color: var(---buttonbackground);
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: var(---buttondisabled);
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(---horizontalrule);
+}
+
+input[type="number"],
+input[type="text"] {
+    height: 39px;
+    background-color: var(---inputbackground);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: var(---inputtext);
+    flex: 2 0 auto;
+}
+
+input[type="range"] {
+    appearance: none;
+    height: 5px;
+    background-color: var(---inputbackground);
+    border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background: var(---inputtext);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    background: var(---inputtext);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+input[type="checkbox"] {
+    height: 30px;
+}
+
+label {
+    color: var(---subheading);
+}
+
+#copy-button {
+    flex: 0 0 72px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#passwords {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#copy-alert {
+    position: fixed;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    background-color: var(---copyalertbackground);
+    border-radius: 6px;
+    color: var(---bodytext);
+    font-size: 16px;
+}
+
+.animatemove {
+    animation-name: animatemove;
+    animation-duration: 1.5s;
+}
+
+@keyframes animatemove {
+    0% { bottom: -200px; }
+    15% { bottom: 20px; }
+    85% { bottom: 20px; }
+    100% { bottom: -200px; }
+}
+
+#options {
+    display: grid;
+    grid-template-columns: auto 75px auto 50px;
+    grid-template-rows: auto auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    justify-self: center;
+    width: 50px;
+}
+
+.spinner::-webkit-outer-spin-button,
+.spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: var(---spinbuttonbackground) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=") no-repeat center center;
+    width: 1em;
+    border: 0px solid var(---spinbuttonborder);
+    opacity: .5; /* shows Spin Buttons per default (Chrome >= 39) */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-image-width: 0px;
+}
+
+.spinner::-webkit-inner-spin-button:hover,
+.spinner::-webkit-inner-spin-button:active {
+    box-shadow: 0 0 2px var(---spinbuttonboxshadow);
+    opacity: .8;
+}
+
+#numbers-min, #special-min {
+    padding-right: 20px;
+}
+
+#themes {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.themebutton {
+    border-radius: 0;
+    outline: 1px solid black;
+    width: 100px;
+    padding: 6px;
+}
+
+.light {
+    background-color: #ECFDF5;
+    color: #2B283A;
+}
+
+.dark {
+    background-color: #1F2937;
+    color: white;
+}

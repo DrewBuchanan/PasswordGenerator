@@ -19,10 +19,10 @@ The Frontend Developer Career Path aims to teach you everything you need to beco
 Happy Coding!
 
 # Stretch Goals
-1. Ability to set password length
+1. ~~Ability to set password length~~ Complete
 2. ~~The ability to copy by clicking a button (should inform as well)~~ - Complete
-3. Various toggle options
-    - Toggle inclusion and quantity of symbols
-    - Toggle inclusion and quantity of numbers
-    - Toggle inclusion of ambiguous characters ("I" vs "l")
+3. ~~Various toggle options~~ Complete
+    - ~~Toggle inclusion and quantity of symbols~~ Complete
+    - ~~Toggle inclusion and quantity of numbers~~ Complete
+    - ~~Toggle inclusion of ambiguous characters ("I" vs "l")~~ Complete
 4. Light/dark mode toggle
