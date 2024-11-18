@@ -1,3 +1,23 @@
+.darkmode {
+    ---spinbuttonbackground: #0C4A6E;
+    ---spinbuttonborder: #BBB;
+    ---spinbuttonboxshadow: #0CF;
+    ---bodytext: white;
+    ---copyalertbackground: #273549;
+    ---inputtext: #55F991;
+    ---inputbackground: #273549;
+    ---horizontalrule: #2F3E53;
+    ---buttondisabled: #065F46;
+    ---buttonbackground: #10b981;
+    ---coloredtext: #4ADF86;
+    ---subheading: #D5D4D8;
+    ---heading: white;
+    ---background: #1F2937;
+}
+
+.lightmode {
+}
+
 * {
     margin: 0;
 }
@@ -5,7 +25,7 @@
 body {
     width: 446px;
     margin: auto;
-    background-color: #1F2937;
+    background-color: var(---background);
     padding: 0 26px;
 }
 
@@ -24,7 +44,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: var(---heading);
     margin-top: 75px;
     font-size: 40px;
     line-height: 40px;
@@ -32,7 +52,7 @@ h1 {
 }
 
 h2 {
-    color: #D5D4D8;
+    color: var(---subheading);
     font-size: 20px;
     line-height: 28px;
     margin: 6px auto 0 auto;
@@ -40,7 +60,7 @@ h2 {
 }
 
 .colortext {
-    color: #4ADF86;
+    color: var(---coloredtext);
 }
 
 #generate {
@@ -51,32 +71,32 @@ h2 {
 }
 
 button {
-    color: white;
-    background-color: #10b981;
+    color: var(---bodytext);
+    background-color: var(---buttonbackground);
     border-radius: 6px;
     border: none;
     font-size: 16px;
 }
 
 button:disabled {
-    background-color: #065F46;
+    background-color: var(---buttondisabled);
 }
 
 hr {
     margin-top: 30px;
     margin-bottom: 30px;
-    border: 1px solid #2F3E53;
+    border: 1px solid var(---horizontalrule);
 }
 
 input {
     height: 39px;
-    background-color: #273549;
+    background-color: var(---inputbackground);
     border: none;
     border-radius: 6px;
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    color: #55F991;
+    color: var(---inputtext);
     flex: 2 0 auto;
 }
 
@@ -105,9 +125,9 @@ input:focus {
     padding: 10px;
     width: 200px;
     margin: auto;
-    background-color: #273549;
+    background-color: var(---copyalertbackground);
     border-radius: 6px;
-    color: white;
+    color: var(---bodytext);
     font-size: 16px;
 }
 
@@ -142,9 +162,9 @@ input:focus {
 .spinner::-webkit-outer-spin-button,
 .spinner::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    background: #0C4A6E url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=") no-repeat center center;
+    background: var(---spinbuttonbackground) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=") no-repeat center center;
     width: 1em;
-    border: 0px solid #BBB;
+    border: 0px solid var(---spinbuttonborder);
     opacity: .5; /* shows Spin Buttons per default (Chrome >= 39) */
     position: absolute;
     top: 0;
@@ -155,7 +175,7 @@ input:focus {
 
 .spinner::-webkit-inner-spin-button:hover,
 .spinner::-webkit-inner-spin-button:active {
-    box-shadow: 0 0 2px #0CF;
+    box-shadow: 0 0 2px var(---spinbuttonboxshadow);
     opacity: .8;
 }
 
