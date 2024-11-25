@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,29 +8,33 @@
         <link rel="stylesheet" href="styles/fonts.css">
         <link rel="stylesheet" href="styles/colors.css">
         <title>Password Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Generate passwords up to 256 characters with special characters, numbers, and the option to avoid ambiguous characters.">
     </head>
     <body class="darkmode">
         <h1 class="Karla heading">Generate a <br><span class="colortext">random password</span></h1>
         <h2 class="Inter subheading">Never use an insecure password again.</h2>
         <hr>
         <div id="options">
-            <label class="inter">Length:</label>
+            <label class="inter" for="length-value">Length:</label>
             <input type="number" class="spinner" id="length-value" value="256" min="4" max="256" step="1">
+            <label style="grid-column: 3 / span 0" class="inter sr-only" for="length">Password length slider (mirrors number input above)</label>
             <input style="grid-column: 3 / span 2;" type="range" id="length" name="length" min="4" max="256" step="1" value="256">
-            <label class="inter">Include special?</label>
+            <label class="inter" for="include-special">Include special?</label>
             <input type="checkbox" class="checkbox" id="include-special" name="include-special" checked="true">
-            <label class="inter">Minimum special:</label>
+            <label class="inter" for="special-min">Minimum special:</label>
             <input type="number" class="spinner" id="special-min" min="1" max="64" value="1">
-            <label class="inter">Include numbers?</label>
+            <label class="inter" for="include-numbers">Include numbers?</label>
             <input type="checkbox" class="checkbox" id="include-numbers" name="include-numbers" checked="true">
-            <label class="inter">Minimum numbers?</label>
+            <label class="inter" for="numbers-min">Minimum numbers?</label>
             <input type="number" class="spinner" id="numbers-min" min="1" max="64" value="1">
-            <label class="inter">Avoid ambiguous?</label>
+            <label class="inter" for="include-ambiguous">Avoid ambiguous?</label>
             <input type="checkbox" class="checkbox" id="include-ambiguous" name="include-ambiguous" checked="false">
         </div>
         <button id="generate" class="Inter" onclick="generatePasswords()">Generate Password</button>
         <hr>
         <div id="passwords">
+            <label for="password-one" class="sr-only">Generated Password</label>
             <input type="text" class="Inter password" id="password-one" readonly></input>
             <button id="copy-button" class="Inter" onclick="copyToClipboard()">Copy</button>
         </div>
