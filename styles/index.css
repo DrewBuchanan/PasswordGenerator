@@ -2,6 +2,15 @@
     margin: 0;
 }
 
+.sr-only {
+    position: absolute;
+    left:-10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 body {
     width: 446px;
     margin: auto;
@@ -31,8 +40,8 @@ body {
 
 #generate {
     margin: 50px auto 0 auto;
-    width: 191;
-    height: 42;
+    width: 191px;
+    height: 42px;
     display: block;
 }
 
